@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 
 import CardInfo from "./cardInfo";
+
 const TodoCard = ({
   heading,
   text,
@@ -9,18 +10,25 @@ const TodoCard = ({
   imageSourceOne,
   imageSourceTwo,
   rotation,
+  dottedBoxBg,
+  dottedBorder,
+  dottedBoxRadius,
+  linearTransform,
 }) => {
   return (
-    <Box bg="#FFFFFF" p={5} mt={4} borderRadius={16} transform={rotation}>
+    <Box p={5}>
       <CardInfo
         heading={heading}
         text={text}
         imageSourceOne={imageSourceOne}
         imageSourceTwo={imageSourceTwo}
         info={info}
-        rotation
         buttonBg="#D58D49"
-        position="absolute"
+        rotation={rotation}
+        dottedBoxBg={dottedBoxBg}
+        dottedBorder={dottedBorder}
+        dottedBoxRadius={dottedBoxRadius}
+        linearTransform={linearTransform}
       />
     </Box>
   );

@@ -27,6 +27,10 @@ const Content = () => {
       imageSourceOne: "",
       imageSourceTwo: "",
       rotation: "",
+      dottedBoxBg: "",
+      dottedBorder: "",
+      dottedBoxRadius: "",
+      linearTransform: "",
     },
     {
       id: "2",
@@ -35,7 +39,11 @@ const Content = () => {
       info: "User research helps you to create an optimal product for users.",
       imageSourceOne: "",
       imageSourceTwo: "",
-      rotation: "rotate(3deg)",
+      rotation: "rotate(5deg)",
+      dottedBoxBg: "rgba(80, 48, 229, 0.06)",
+      dottedBorder: "1px dashed rgba(80, 48, 229, 0.59)",
+      dottedBoxRadius: "10px",
+      linearTransform: "translate(6%, -15%)",
     },
     {
       id: "3",
@@ -45,6 +53,10 @@ const Content = () => {
       imageSourceOne: "",
       imageSourceTwo: "",
       rotation: "",
+      dottedBoxBg: "",
+      dottedBorder: "",
+      dottedBoxRadius: "",
+      linearTransform: "",
     },
   ]);
   const [progressCards, setProgressCards] = useState([
@@ -56,6 +68,10 @@ const Content = () => {
       imageSourceTwo: "",
       info: "",
       rotation: "",
+      dottedBoxBg: "",
+      dottedBorder: "",
+      dottedBoxRadius: "",
+      linearTransform: "",
     },
     {
       id: "progress-card-2",
@@ -65,6 +81,10 @@ const Content = () => {
       imageSourceTwo: "/background/dog.svg",
       info: "",
       rotation: "",
+      dottedBoxBg: "",
+      dottedBorder: "",
+      dottedBoxRadius: "",
+      linearTransform: "",
     },
   ]);
 
@@ -76,6 +96,9 @@ const Content = () => {
       imageSourceOne: "/background/mobile.svg",
       imageSourceTwo: "",
       rotation: "",
+      dottedBoxBg: "",
+      dottedBorder: "",
+      dottedBoxRadius: "",
     },
 
     {
@@ -86,6 +109,10 @@ const Content = () => {
       imageSourceOne: "",
       imageSourceTwo: "",
       rotation: "",
+      dottedBoxBg: "",
+      dottedBorder: "",
+      dottedBoxRadius: "",
+      linearTransform: "",
     },
   ]);
   const onDragEnd = (result) => {

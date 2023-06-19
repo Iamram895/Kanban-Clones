@@ -1,6 +1,6 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
-import { Box, HStack, Text, Icon, Card } from "@chakra-ui/react";
+import { Box, HStack, Text, Icon } from "@chakra-ui/react";
 import { SmallAddIcon } from "@chakra-ui/icons";
 import { VscCircleFilled } from "react-icons/vsc";
 import TodoCard from "./todoCard";
@@ -67,6 +67,10 @@ const Cards = ({
                           imageSourceOne={card.imageSourceOne}
                           imageSourceTwo={card.imageSourceTwo}
                           rotation={card.rotation}
+                          dottedBoxBg={card.dottedBoxBg}
+                          dottedBorder={card.dottedBorder}
+                          dottedBoxRadius={card.dottedBoxRadius}
+                          linearTransform={card.linearTransform}
                         />
                       </div>
                     )}
@@ -101,6 +105,10 @@ const Cards = ({
                               imageSourceTwo={card.imageSourceTwo}
                               info={card.info}
                               rotation={card.rotation}
+                              dottedBoxBg={card.dottedBoxBg}
+                              dottedBorder={card.dottedBorder}
+                              dottedBoxRadius={card.dottedBoxRadius}
+                              linearTransform={card.linearTransform}
                             />
                           </div>
                         ) : (
@@ -111,6 +119,10 @@ const Cards = ({
                             imageSourceTwo={card.imageSourceTwo}
                             info={card.info}
                             rotation={card.rotation}
+                            dottedBoxBg={card.dottedBoxBg}
+                            dottedBorder={card.dottedBorder}
+                            dottedBoxRadius={card.dottedBoxRadius}
+                            linearTransform={card.linearTransform}
                           />
                         )}
                       </div>
@@ -144,6 +156,10 @@ const Cards = ({
                           imageSourceTwo={card.imageSourceTwo}
                           info={card.info}
                           rotation={card.rotation}
+                          dottedBoxBg={card.dottedBoxBg}
+                          dottedBorder={card.dottedBorder}
+                          dottedBoxRadius={card.dottedBoxRadius}
+                          linearTransform={card.linearTransform}
                         />
                       </div>
                     )}

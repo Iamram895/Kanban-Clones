@@ -9,9 +9,13 @@ const ProgressCard = ({
   imageSourceTwo,
   info,
   rotation,
+  dottedBoxBg,
+  dottedBorder,
+  dottedBoxRadius,
+  linearTransform,
 }) => {
   return (
-    <Box bg="#FFFFFF" p={5} mt={4} borderRadius={16} transform={rotation}>
+    <Box p={5} mt={4} borderRadius={16}>
       <CardInfo
         heading={heading}
         text={text}
@@ -20,6 +24,10 @@ const ProgressCard = ({
         info={info}
         rotation={rotation}
         buttonBg="#D58D49"
+        dottedBoxBg={dottedBoxBg}
+        dottedBorder={dottedBorder}
+        dottedBoxRadius={dottedBoxRadius}
+        linearTransform={linearTransform}
       />
     </Box>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
-import { Box, HStack, Text, Icon } from "@chakra-ui/react";
+import { Box, HStack, Text, Icon, Card } from "@chakra-ui/react";
 import { SmallAddIcon } from "@chakra-ui/icons";
 import { VscCircleFilled } from "react-icons/vsc";
-import Cards from "./todoCard";
+import TodoCard from "./todoCard";
 import ProgressCard from "./progressCard";
 import DoneCard from "./doneCard";
 
-const TodoCard = ({
+const Cards = ({
   heading,
   isShowButton,
   color,
@@ -60,12 +60,13 @@ const TodoCard = ({
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                       >
-                        <Cards
+                        <TodoCard
                           text={card.text}
                           heading={card.heading}
                           info={card.info}
                           imageSourceOne={card.imageSourceOne}
                           imageSourceTwo={card.imageSourceTwo}
+                          rotation={card.rotation}
                         />
                       </div>
                     )}
@@ -99,6 +100,7 @@ const TodoCard = ({
                               imageSourceOne={card.imageSourceOne}
                               imageSourceTwo={card.imageSourceTwo}
                               info={card.info}
+                              rotation={card.rotation}
                             />
                           </div>
                         ) : (
@@ -108,6 +110,7 @@ const TodoCard = ({
                             imageSourceOne={card.imageSourceOne}
                             imageSourceTwo={card.imageSourceTwo}
                             info={card.info}
+                            rotation={card.rotation}
                           />
                         )}
                       </div>
@@ -140,6 +143,7 @@ const TodoCard = ({
                           imageSourceOne={card.imageSourceOne}
                           imageSourceTwo={card.imageSourceTwo}
                           info={card.info}
+                          rotation={card.rotation}
                         />
                       </div>
                     )}
@@ -155,4 +159,4 @@ const TodoCard = ({
   );
 };
 
-export default TodoCard;
+export default Cards;

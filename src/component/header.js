@@ -6,9 +6,6 @@ import {
   InputGroup,
   Text,
   InputLeftElement,
-  Divider,
-  Center,
-  Stack,
   IconButton,
   useDisclosure,
 } from "@chakra-ui/react";

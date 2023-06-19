@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Icon, Text, Image } from "@chakra-ui/react";
 import { BsFillLightbulbFill } from "react-icons/bs";
 
 const ThoughtTime = () => {
@@ -17,8 +17,8 @@ const ThoughtTime = () => {
           Thoughts Time
         </Text>
         <Text textAlign="center" p={2}>
-          We don’t have any notice for you, till then you can share your
-          thoughts with your peers.
+          We dont have any notice for you, till then you can share your thoughts
+          with your peers.
         </Text>
 
         <Box
@@ -32,8 +32,14 @@ const ThoughtTime = () => {
           p={3}
         >
           <Box>
-            <Box>
-              <Icon as={BsFillLightbulbFill} color="#FBCB18" boxSize={8} />
+            <Box
+              bg="rgba(252, 214, 74, .3)"
+              borderRadius="50%"
+              p={1}
+              zIndex={-1}
+              position="relative"
+            >
+              <Image src="/icons/lampIcon.svg" w={7} />
             </Box>
           </Box>
         </Box>

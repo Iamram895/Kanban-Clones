@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import Header from "./component/header";
 import Sidebar from "./component/sidebar";
-import Content from "./component/content";
+import Content from "./component/mainContent";
 
 function App() {
   return (

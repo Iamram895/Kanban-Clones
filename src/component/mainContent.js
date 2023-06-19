@@ -16,7 +16,7 @@ import { SmallAddIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { TbPencil } from "react-icons/tb";
 import { FiLink2 } from "react-icons/fi";
 import { BiFilterAlt } from "react-icons/bi";
-import TodoCard from "./card";
+import Cards from "./cards";
 const Content = () => {
   const [todoCards, setTodoCards] = useState([
     {
@@ -26,6 +26,7 @@ const Content = () => {
       info: "Brainstorming brings team members' diverse experience into play. ",
       imageSourceOne: "",
       imageSourceTwo: "",
+      rotation: "",
     },
     {
       id: "2",
@@ -34,6 +35,7 @@ const Content = () => {
       info: "User research helps you to create an optimal product for users.",
       imageSourceOne: "",
       imageSourceTwo: "",
+      rotation: "rotate(3deg)",
     },
     {
       id: "3",
@@ -42,6 +44,7 @@ const Content = () => {
       info: "Low fidelity wireframes include the most basic content and visuals.",
       imageSourceOne: "",
       imageSourceTwo: "",
+      rotation: "",
     },
   ]);
   const [progressCards, setProgressCards] = useState([
@@ -52,6 +55,7 @@ const Content = () => {
       imageSourceOne: "/background/bording.svg",
       imageSourceTwo: "",
       info: "",
+      rotation: "",
     },
     {
       id: "progress-card-2",
@@ -60,6 +64,7 @@ const Content = () => {
       imageSourceOne: "/background/tree.svg",
       imageSourceTwo: "/background/dog.svg",
       info: "",
+      rotation: "",
     },
   ]);
 
@@ -70,7 +75,9 @@ const Content = () => {
       heading: "Mobile App Design",
       imageSourceOne: "/background/mobile.svg",
       imageSourceTwo: "",
+      rotation: "",
     },
+
     {
       id: "done-card-2",
       text: "Completed",
@@ -78,6 +85,7 @@ const Content = () => {
       info: "It just needs to adapt the UI from what you did before ",
       imageSourceOne: "",
       imageSourceTwo: "",
+      rotation: "",
     },
   ]);
   const onDragEnd = (result) => {
@@ -249,7 +257,7 @@ const Content = () => {
               xl: "calc(33.333% - 2rem)",
             }}
           >
-            <TodoCard
+            <Cards
               heading="To Do"
               isShowButton={true}
               color="#5030E5"
@@ -268,7 +276,7 @@ const Content = () => {
               xl: "calc(33.333% - 2rem)",
             }}
           >
-            <TodoCard
+            <Cards
               heading="In Progress"
               isShowButton={false}
               color="#FFA500"
@@ -287,7 +295,7 @@ const Content = () => {
               xl: "calc(33.333% - 2rem)",
             }}
           >
-            <TodoCard
+            <Cards
               heading="Done"
               isShowButton={false}
               color="#76A5EA"

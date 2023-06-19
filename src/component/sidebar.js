@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  HStack,
-  Image,
-  Stack,
-  Icon,
-  Text,
-  Divider,
-  Flex,
-  Box,
-} from "@chakra-ui/react";
+import { HStack, Image, Stack, Icon, Text, Box } from "@chakra-ui/react";
 import { IoSettingsOutline } from "react-icons/io5";
 import { VscCircleFilled } from "react-icons/vsc";
 import { PlusSquareIcon } from "@chakra-ui/icons";

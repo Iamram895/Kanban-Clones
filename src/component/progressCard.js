@@ -1,7 +1,6 @@
 import React from "react";
-import { Box, HStack, Image, Text, Button, Icon } from "@chakra-ui/react";
-import { BsThreeDots } from "react-icons/bs";
-import Memberinfo from "./memberinfo";
+import { Box } from "@chakra-ui/react";
+import CardInfo from "./cardInfo";
 
 const ProgressCard = ({
   heading,
@@ -9,26 +8,19 @@ const ProgressCard = ({
   imageSourceOne,
   imageSourceTwo,
   info,
+  rotation,
 }) => {
   return (
-    <Box bg="#FFFFFF" p={5} mt={4} borderRadius={16}>
-      <HStack justifyContent="space-between" p={3} alignItems="center">
-        <Button bg="#D58D49">{text}</Button>
-        <Icon as={BsThreeDots} bgSize={8} />
-      </HStack>
-      <Text fontSize="2xl">{heading}</Text>
-      <Box justifyContent="center" alignItems="center" display="flex">
-        <HStack flexWrap="wrap">
-          <Image src={imageSourceOne} />
-          <Image src={imageSourceTwo} />
-        </HStack>
-
-        <Text>{info}</Text>
-      </Box>
-
-      <Box>
-        <Memberinfo />
-      </Box>
+    <Box bg="#FFFFFF" p={5} mt={4} borderRadius={16} transform={rotation}>
+      <CardInfo
+        heading={heading}
+        text={text}
+        imageSourceOne={imageSourceOne}
+        imageSourceTwo={imageSourceTwo}
+        info={info}
+        rotation={rotation}
+        buttonBg="#D58D49"
+      />
     </Box>
   );
 };
